@@ -1,0 +1,221 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "login": "Zmeelov",
+            "username": "Змеелов",
+            "password": "snake2024",
+            "result": 1250
+        },
+        {
+            "id": 2, 
+            "login": "Pytonyich",
+            "username": "Питоныч", 
+            "password": "python123",
+            "result": 1100
+        },
+        {
+            "id": 3,
+            "login": "Coder",
+            "username": "Кодер",
+            "password": "code456",
+            "result": 980
+        },
+        {
+            "id": 4,
+            "login": "Programmer",
+            "username": "Программист",
+            "password": "dev789",
+            "result": 850
+        },
+        {
+            "id": 5,
+            "login": "Java",
+            "username": "Джава",
+            "password": "java2023",
+            "result": 720
+        },
+        {
+            "id": 6,
+            "login": "Python",
+            "username": "Пайтон",
+            "password": "py2024",
+            "result": 650
+        },
+        {
+            "id": 7,
+            "login": "Analyst",
+            "username": "Аналитик",
+            "password": "data123",
+            "result": 550
+        },
+        {
+            "id": 8,
+            "login": "Developer",
+            "username": "Разработчик",
+            "password": "web456",
+            "result": 450
+        },
+        {
+            "id": 9,
+            "login": "Intern",
+            "username": "Стажер",
+            "password": "junior789",
+            "result": 300
+        },
+        {
+            "id": 10,
+            "login": "Newbie1",
+            "username": "Новичок1",
+            "password": "new2024_1",
+            "result": 150
+        },
+        {
+            "id": 11,
+            "login": "Newbie2",
+            "username": "Новичок2",
+            "password": "new2024_2",
+            "result": 150
+        },
+        {
+            "id": 12,
+            "login": "Newbie3",
+            "username": "Новичок3",
+            "password": "new2024_3",
+            "result": 100
+        },
+        {
+            "id": 13,
+            "login": "Newbie4",
+            "username": "Новичок4",
+            "password": "new2024_4",
+            "result": 93
+        },
+        {
+            "id": 14,
+            "login": "Newbie5",
+            "username": "Новичок5",
+            "password": "new2024_5",
+            "result": 80
+        },
+        {
+            "id": 15,
+            "login": "Newbie6",
+            "username": "Новичок6",
+            "password": "new2024_6",
+            "result": 70
+        },
+        {
+            "id": 16,
+            "login": "Newbie7",
+            "username": "Новичок7",
+            "password": "new2024_7",
+            "result": 70
+        },
+        {
+            "id": 17,
+            "login": "Newbie8",
+            "username": "Новичок8",
+            "password": "new2024_8",
+            "result": 60
+        },
+        {
+            "id": 18,
+            "login": "Newbie9",
+            "username": "Новичок9",
+            "password": "new2024_9",
+            "result": 50
+        },
+        {
+            "id": 19,
+            "login": "Newbie10",
+            "username": "Новичок10",
+            "password": "new2024_10",
+            "result": 50
+        },
+        {
+            "id": 20,
+            "login": "Newbie11",
+            "username": "Новичок11",
+            "password": "new2024_11",
+            "result": 60
+        },
+        {
+            "id": 21,
+            "login": "Newbie12",
+            "username": "Новичок12",
+            "password": "new2024_12",
+            "result": 65
+        },
+        {
+            "id": 22,
+            "login": "Newbie13",
+            "username": "Новичок13",
+            "password": "new2024_13",
+            "result": 32
+        },
+        {
+            "id": 23,
+            "login": "Loser1",
+            "username": "Лох1",
+            "password": "fail2024_1",
+            "result": 1
+        },
+        {
+            "id": 24,
+            "login": "Loser2",
+            "username": "Лох2",
+            "password": "fail2024_2",
+            "result": 2
+        },
+        {
+            "id": 25,
+            "login": "Loser3",
+            "username": "Лох3",
+            "password": "fail2024_3",
+            "result": 3
+        },
+        {
+            "id": 26,
+            "login": "Loser4",
+            "username": "Лох4",
+            "password": "fail2024_4",
+            "result": 0
+        },
+        {
+            "id": 27,
+            "login": "Loser_A",
+            "username": "Лох",
+            "password": "fail2024_A",
+            "result": 3
+        },
+        {
+            "id": 28,
+            "login": "Loser_B",
+            "username": "Лох",
+            "password": "fail2024_B",
+            "result": 4
+        },
+        {
+            "id": 29,
+            "login": "Loser_C",
+            "username": "Лох",
+            "password": "fail2024_C",
+            "result": 5
+        },
+        {
+            "id": 30,
+            "login": "Loser_D",
+            "username": "Лох",
+            "password": "fail2024_D",
+            "result": 1
+        },
+        {
+            "id": 31,
+            "login": "Loser_E",
+            "username": "Лох",
+            "password": "fail2024_E",
+            "result": 0
+        }
+    ]
+  }

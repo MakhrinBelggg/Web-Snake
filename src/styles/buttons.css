@@ -1,0 +1,75 @@
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--clr-surface-a10);
+    color: var(--clr-light-a0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+  }
+
+  .buttonGreen {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--clr-primary-a10);
+    color: var(--clr-dark-a0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    box-shadow: 0 0 70px #b8ff5c8a;
+    transition: box-shadow 0.3s ease;
+  }
+
+
+  .buttonGreen:hover, .buttonGreen:hover::before {
+    box-shadow: 0 0 20px var(--clr-primary-a0);
+    background-color: var(--clr-primary-a10);
+  }
+
+  .buttonLightGreen {
+    display: inline;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--clr-primary-a30);
+    color: var(--clr-dark-a0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    transition: padding 0.3s ease;
+    margin-right: auto;
+  }
+
+  .buttonLightGreen:hover, .buttonLightGreen:hover::before {
+    background-color: var(--clr-primary-a40);
+  }
+
+  .buttonBlack {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--clr-surface-a10);
+    color: var(--clr-primary-a30);
+    border: 1.5px solid var(--clr-surface-a30);
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    transition: background-color 0.3s ease;
+  }
+
+  .buttonBlack:hover, .buttonBlack:hover::before {
+    background-color: var(--clr-surface-a30);
+  }
+
+  .buttonBlack:disabled {
+    background-color: transparent;
+    cursor: default;
+    color: transparent;
+    border: none;
+  }
+  

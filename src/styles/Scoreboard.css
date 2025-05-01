@@ -1,0 +1,163 @@
+.scoreboard-container {
+    max-width: 600px;
+    width: 600px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--clr-surface-a10);
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px #b8ff5c2b; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .scoreboard-container h1 {
+    text-align: left;
+    
+    color: #ffffff;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  .d-block {
+    display: block;
+  }
+
+  .d-grid {
+    display: grid;
+  }
+
+  .d-block-l {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  
+  }
+  .scoreboard-header {
+    display: grid;
+    align-items:center;
+    --_min-col-size: 200px;
+    grid-template-columns: repeat(auto-fit, minmax(var(--_min-col-size), 1fr));
+    margin-bottom: 20px;
+  }
+
+  .leaderboard-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: var(--clr-light-a0);
+
+    padding-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 9px;
+    border: 1px solid #58585834;
+    transition: background-color 0.3s ease;
+  }
+  
+  .leaderboard-item:hover {
+    background-color: var(--clr-surface-a30);
+  }
+  
+  .place-number {
+    font-weight: 600;
+    width: 50px;
+    text-align: center;
+  }
+  
+  .leader-name {
+    font-weight: 400;
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  .leader-score {
+    font-weight: 400;
+  }
+  
+  .gold-place {
+    background-color: rgba(255, 215, 0, 0.3);
+  }
+  
+  .silver-place {
+    background-color: rgba(198, 187, 187, 0.3);
+  }
+  
+  .bronze-place {
+    background-color: rgba(205, 127, 50, 0.3);
+  }
+  
+  .default-place {
+    background-color: transparent;
+  }
+  
+  .scoreboard-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .to-game-button {
+    /* background-color: #4CAF50; */
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    gap: 10px;
+  }
+  
+  .to-game-button:hover {
+    background-color: #45a049;
+  }
+
+  .pagination {
+    display: inline-flex;
+    /* justify-content: space-between; */
+    column-gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+  
+  .pagination-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-button:disabled {
+    background-color: transparent;
+    cursor: default;
+    color: transparent;
+  }
+  
+  .page-info {
+    color: var(--clr-surface-a50);
+    font-weight: 600;
+  }
+  
+  .pagination-button:hover:not(:disabled) {
+    background-color: #45a049;
+  }
