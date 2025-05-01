@@ -24,15 +24,31 @@ const AuthPage = () => {
   };
 
  const handlePlayClick = () => {
-    if (!username || !password) {
-      setError("Пожалуйста, заполни все поля")
+    if (isRegistering)
+    {
+      if (!username || !login || !password) {
+        setError("Пожалуйста, заполни все поля")
+      }
+      else{
+        {
+          goToGame();
+          if (isRegistering) console.log('Username:', username);
+          console.log('Login:', login);
+          console.log('Password:', password);
+        }
+      }
     }
     else
     {
-      goToGame();
-      console.log('Username:', username);
-      console.log('Login:', login);
-      console.log('Password:', password);
+      if (!login || !password) {
+        setError("Пожалуйста, заполни все поля")
+      } 
+      else {
+        goToGame();
+        if (isRegistering) console.log('Username:', username);
+        console.log('Login:', login);
+        console.log('Password:', password);
+      }
     }
   };
 
@@ -55,7 +71,7 @@ const AuthPage = () => {
         <div className="h1" style={{ verticalAlign: "center", justifyContent: "center" }}>Добро пожаловать</div>
         <div className='h4' style={{ marginTop: "5px" }}>Пожалуйста пройди аутентификацию перед началом игры</div>
 
-        <form className="auth-form">
+        <form className="auth-form" onSubmit={handlePlayClick}>
           <div className="form-group">
             <label className="switch" style={{ marginBottom: "20px" }}>
               <input type="checkbox" checked={isRegistering} onChange={toggleRegistration} />
@@ -68,19 +84,43 @@ const AuthPage = () => {
 
           {isRegistering && (
             <div className="form-group">
-              <input type="text" id="username" className="inputBox" placeholder="Никнейм" value={username} onChange={handleUsernameChange} />
+              <input 
+                type="text" 
+                id="username" 
+                className="inputBox" 
+                placeholder="Никнейм" 
+                value={username} 
+                onChange={handleUsernameChange} 
+                required
+                />
             </div>
           )}
 
           <div className="form-group">
-            <input type="text" id="login" className="inputBox" placeholder="Логин" value={login} onChange={handleLoginChange} />
+            <input 
+              type="text" 
+              id="login" 
+              className="inputBox" 
+              placeholder="Логин" 
+              value={login} 
+              onChange={handleLoginChange} 
+              required
+              />
           </div>
 
           <div className="form-group">
-            <input type="password" id="password" className="inputBox" placeholder="Пароль" value={password} onChange={handlePasswordChange} />
+            <input type="password" 
+            id="password" 
+            className="inputBox" 
+            placeholder="Пароль" 
+            value={password} 
+            onChange={handlePasswordChange} 
+            required
+            />
           </div>
 
           <div>
+            {error && <h4 style={{ color: '#FF6565'}}>{error}</h4>}
             <button onClick={(e) => {
               e.preventDefault();
               handlePlayClick();
