@@ -23,6 +23,27 @@ const AuthPage = () => {
     navigate('/game');
   };
 
+ const validatePassword = (password) => {
+  const minLength = password.length >= 8;
+  const hasUpperCase = /[A-Z]/.test(password);
+  const hasLowerCase = /[a-z]/.test(password);
+  const hasNumber = /\d/.test(password);
+  if (!minLength) {
+    return 'Пароль должен содержать не менее 8 символов.';
+  }
+  if (!hasUpperCase) {
+    return 'Пароль должен содержать хотя бы одну заглавную букву.';
+  }
+  if (!hasLowerCase) {
+    return 'Пароль должен содержать хотя бы одну строчную букву.';
+  }
+  if (!hasNumber) {
+    return 'Пароль должен содержать хотя бы одну цифру.';
+  }
+
+  return '';
+ };
+
  const handlePlayClick = () => {
     if (isRegistering)
     {
@@ -31,10 +52,18 @@ const AuthPage = () => {
       }
       else{
         {
-          goToGame();
-          if (isRegistering) console.log('Username:', username);
-          console.log('Login:', login);
-          console.log('Password:', password);
+          const errorMessage = validatePassword(password);
+          if(errorMessage)
+          {
+            setError(errorMessage);
+          }
+          else
+          {
+            goToGame();
+            console.log('Username:', username);
+            console.log('Login:', login);
+            console.log('Password:', password);
+          }
         }
       }
     }
@@ -44,10 +73,17 @@ const AuthPage = () => {
         setError("Пожалуйста, заполни все поля")
       } 
       else {
-        goToGame();
-        if (isRegistering) console.log('Username:', username);
-        console.log('Login:', login);
-        console.log('Password:', password);
+        const errorMessage = validatePassword(password);
+          if(errorMessage)
+          {
+            setError(errorMessage);
+          }
+          else
+          {
+            goToGame();
+            console.log('Login:', login);
+            console.log('Password:', password);
+          }
       }
     }
   };
@@ -72,8 +108,8 @@ const AuthPage = () => {
         <div className='h4' style={{ marginTop: "5px" }}>Пожалуйста пройди аутентификацию перед началом игры</div>
 
         <form className="auth-form" onSubmit={handlePlayClick}>
-          <div className="form-group">
-            <label className="switch" style={{ marginBottom: "20px" }}>
+          <div className="form-group" style={{ padding: '0px' }}>
+            <label className="switch">
               <input type="checkbox" checked={isRegistering} onChange={toggleRegistration} />
               <span className="slider">
                 <span className="text-off">Войти</span>
@@ -81,7 +117,7 @@ const AuthPage = () => {
               </span>
             </label>
           </div>
-
+        
           {isRegistering && (
             <div className="form-group">
               <input 
@@ -119,15 +155,19 @@ const AuthPage = () => {
             />
           </div>
 
-          <div>
-            {error && <h4 style={{ color: '#FF6565'}}>{error}</h4>}
+          <div className="form-group">
             <button onClick={(e) => {
               e.preventDefault();
               handlePlayClick();
-            }} type="submit" className="buttonGreen" style={{ marginTop: "30px" }}>Играть</button>
+            }} type="submit" className="buttonGreen" style={{ marginTop: "0px" }}>Играть</button>
           </div>
         </form>
       </div>
+      {error && <div className = "auth-error-container">
+        <div className='h5-error'>
+          {error}
+        </div>
+      </div>}
     </div>
   );
 };

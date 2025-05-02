@@ -1,4 +1,4 @@
-.auth-page-container {
+  .auth-page-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,6 +18,16 @@
     font-family: 'Manrope', sans-serif;
     background-color: var(--clr-surface-a10);
     border-radius: 10px;
+  }
+
+  .auth-error-container {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: var(--red);
   }
   
   .auth-page-title {
@@ -72,8 +82,7 @@
     display: inline-block;
     height: 46px;
     width: 240px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 8px;
   }
   
   .switch input {

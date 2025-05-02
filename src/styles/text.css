@@ -37,6 +37,14 @@
     color: var(--clr-surface-a50);
   }
 
+  .h5-error{
+    font-size: 12px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    min-width: 200px;
+    color: var(--clr-light-a0);
+  }
+
   .scoreBoard {
     display: flex;
     align-items: center;
